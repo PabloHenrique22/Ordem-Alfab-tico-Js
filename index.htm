@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem Alfabético - js</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const nome = [
+        "Miguel",
+        "Alice",
+        "Arthur",
+        "Sophia",
+        "Davi",
+        "Laura",
+        "Bernardo",
+        "Valentina",
+        "Heitor",
+        "Helena",
+        "Gabriel",
+        "Isabella",
+        "Pedro",
+        "Claudio",
+        "Manuela",
+        "Lorenzo",
+        "Júlia",
+        "Lucas",
+        "Matheus",
+        "Enzo",
+        "Theo",
+        "Rafael",
+        "Maria",
+        "Kaik",
+        "Nicolas",
+        "Otavio",
+        "Zerimar",
+        "Samuel",
+        "Henrique",
+        "Felipe",
+    ];
+
+    const ordenar = nome.sort((a, b) => {
+        const nomesA = a.split(' ')[0]
+        const nomesB = b.split(' ')[0]
+        return nomesA < nomesB ? -1 : nomesA > nomesB ? 1 : 0
+    });
+
+    console.log(ordenar);
+</script>
+
+</html>
